@@ -1,0 +1,89 @@
+.vehicles-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.register-btn{
+  height: 3rem;
+  min-width: 2rem;
+}
+
+.sizing-modal{
+  overflow: scroll;
+  max-height: 12rem;
+  min-height: 12rem;
+}
+
+.sizing-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.title-border{
+  border-radius: 8px;
+  border: 3px solid #33cc33;
+}
+
+.vehicle-content{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.vehicle-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.vehicle-sub-title{
+  padding-top: 6px;
+  font-size: 1.2rem;
+}
+
+.vehicle-title-card{
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.vehicle-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card-vehicles{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  width: 16rem;
+  margin: 24px;
+}
+
+.card-vehicles:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.vehicle-image{
+  padding: 12px;
+  width: 15rem;
+  height: 12rem;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pag-btn{
+  width: 2.5rem;
+  background-color: #33cc33;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: white;
+}
+
+.active{
+  background-color: rgb(14, 98, 7);
+}

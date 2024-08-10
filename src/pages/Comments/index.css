@@ -1,0 +1,30 @@
+.card-vs{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  width: 18rem !important;
+  margin: 24px;
+}
+
+.card-image-div{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-table-cell{
+  max-width: 18rem;
+}
+
+.image{
+  padding: 12px;
+  width: 7rem;
+  height: 10rem;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: rgb(79, 208, 86);
+}

@@ -1,0 +1,32 @@
+.background-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #329611;
+  height: 100vh
+}
+
+.login-div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  width: 40%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.login-password-div{
+  width: 80%;
+}
+
+
+.login-password-div > span{
+  font-weight: bold;
+}
+
+.login-password-input{
+  height: 3rem;
+}

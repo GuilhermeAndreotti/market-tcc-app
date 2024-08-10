@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-app{
+  height: 100vh;
+  
+}
+
+.content{
+  margin: 24px 16px;
+  padding: 24px;
+  min-height: 280;
+  background: white;
+  border-radius: 8px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}

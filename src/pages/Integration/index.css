@@ -1,0 +1,38 @@
+.vehicles-div {
+  display: flex; /* Alterado para inline-block */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.register-btn{
+  height: 3rem;
+  min-width: 2rem;
+}
+
+.title-border{
+  border-radius: 8px;
+  border: 3px solid #33cc33;
+}
+
+.vehicle-content{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+
+.vehicle-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.vehicle-sub-title{
+  padding-top: 6px;
+  font-size: 1.2rem;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th{
+  background-color: #33cc33;
+  color: white;
+}
