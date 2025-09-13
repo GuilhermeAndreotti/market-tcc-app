@@ -1,46 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Sobre o projeto
 
-In the project directory, you can run:
+O objetivo desse projeto é apresentar um protótipo simplificado de umsistema web focado para revendedoras de veículos, com o foco de centralizar as publicações em um sistema só. Além disso também é possível publicar os veículos cadastrados como anúncios no Mercado Livre, no [setor de veículos](https://www.mercadolivre.com.br/c/carros-motos-e-outros), através da integração com o Mercado Livre. O sistema web utilizou React e a UI do [Ant Design](https://ant.design/) para seu desenvolvimento.
 
-### `npm start`
+O diagrama de componentes ilustra a interação realizada com a API do Mercado Livre e o sistema durante o fluxo de publicação:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div align="center">
+  <img width="713" height="450" alt="image" src="https://github.com/user-attachments/assets/1e192c47-423b-42d8-ab72-4fdcc731a4b3" />
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Integração
 
-### `npm test`
+A integração é realizado pelo admin master, que nessa tela, poderia se conectar com a conta do Mercado Livre. Após isso, o mesmo podendo remover quando necessário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div align="center">
+  <img width="1298" height="398" alt="image" src="https://github.com/user-attachments/assets/dd549f64-05a2-4c1b-884f-a98b6e6d2925" />
+</div>
 
-### `npm run build`
+## Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Rode yarn para instalar as dependências, se não tiver o yarn, rode o primeiro comando antes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install --global yarn
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ yarn
+```
 
-### `npm run eject`
+Após isso, é necessário preencher o env do front, que é
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```env
+REACT_APP_API_KEY=
+REACT_APP_ADMIN_ID=4ab2601e-34fa-4718-beda-1f788077c9f2
+REACT_APP_REDIRECT_URL=
+REACT_APP_MERCADO_LIVRE_URL=
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+REACT_APP_API_KEY pode ser preenchido http://localhost:3000, por exemplo, por ser a url da API. REACT_APP_ADMIN_ID está com 4ab2601e-34fa-4718-beda-1f788077c9f2 por ser o login padrão do primeiro master.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Por fim, para rodar o projeto, execute:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+yarn run start
+```
 
-## Learn More
+## Documentaçôes utilizadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- https://ant.design/
+- https://react.dev/
