@@ -32,6 +32,7 @@ export const Login = () => {
         <div className="d-flex justify-content-center align-items-center">
           <img
             src={CarLogo}
+            alt="Car Logo"
             style={{ width: "6rem", marginBottom: "0.5rem" }}
           />
         </div>

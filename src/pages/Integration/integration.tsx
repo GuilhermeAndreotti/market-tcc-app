@@ -7,15 +7,7 @@ import MarketLogo from "../../images/mercado-livre.svg";
 import "./index.css";
 
 export const Integration = () => {
-  const {
-    loadingToken,
-    getMLBToken,
-    checkToken,
-    admin,
-    removeConnection,
-    getAdminById,
-    loadingAdmin
-  } = useAdmin();
+  const { getMLBToken, admin, removeConnection } = useAdmin();
   const navigate = useNavigate();
 
   const handleIntegration = () => {
@@ -33,24 +25,21 @@ export const Integration = () => {
 
   const saveMlbAccessToken = async (code: string) => {
     await getMLBToken(code);
-    window.location.href = '/mercado-livre-integration'
-
+    window.location.href = "/mercado-livre-integration";
   };
 
   const disconnectMlb = async () => {
     await removeConnection();
-    window.location.href = '/mercado-livre-integration'
+    window.location.href = "/mercado-livre-integration";
   };
 
   useEffect(() => {
-
     if (admin.isMaster && !admin.accessToken) {
       const url = window.location.href;
-      console.log(url)
+      console.log(url);
       const match = url.match(/code=([^&]*)/);
       if (match) {
         const code = match[1];
-        console.log('Conectando...')
         saveMlbAccessToken(code);
       }
     }
