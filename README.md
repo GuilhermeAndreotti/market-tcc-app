@@ -47,6 +47,8 @@ Por fim, para rodar o projeto, execute:
 yarn run start
 ```
 
+Para acessar o sistema com o usuário master:
+
 LOGIN:
 master
 
