@@ -47,6 +47,12 @@ Por fim, para rodar o projeto, execute:
 yarn run start
 ```
 
+LOGIN:
+master
+
+SENHA:
+master
+
 ## Documentaçôes utilizadas
 
 - https://ant.design/
